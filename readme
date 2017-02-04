@@ -1,0 +1,23 @@
+Proxy One
+
+It is simple proxy which can convert connections between SSL/TCP types.
+
+Usage:
+
+1. Comiling and launch in console:
+make run
+
+
+Options:
+
+All options presented in src/proxy1.app.src file. You should recompile and restart program every time when you are changed this config.
+
+
+There is example of values for keys from config:
+    { connect_transport, proxy1_ssl_transport }, %% Transport of outgoing connections. Allows values: proxy1_ssl_transport, proxy1_tcp_transport
+    { connect_server, "ya.ru" }, %% Server for oungoing conection
+    { connect_port, 443 }, %% Port for outgoing connections.
+    { listen_transport, proxy1_tcp_transport }, %% Transport of incomming connections. Allows values: proxy1_ssl_transport, proxy1_tcp_transport
+    { listen_port, 8081 } %% Port for incomming connections
+
+Sergey Loguntsov, 2017
