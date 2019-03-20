@@ -4,7 +4,7 @@ It is simple proxy which can convert connections between SSL/TCP types.
 
 Usage:
 
-1. Comiling and launch in console:
+1. Compiling and launch in console:
 make run
 
 
